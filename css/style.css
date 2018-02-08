@@ -1,0 +1,244 @@
+/* tag-global index.html*/
+body{
+  font-family: 'Asap', sans-serif;
+
+}
+
+header{
+  background-image:url('https://s01.video.glbimg.com/x720/6008400.jpg');
+  background-size: cover;
+  height: 650px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+section{
+  background-color: #fff;
+  width:100%;
+  height: 650px;
+  padding-top: 5%;
+  text-shadow: 5px 5px 5px rbga(0,0,0,0.5);
+}
+footer{
+  background-color: #484e54;
+  width:100%;
+  height: 400px;
+}
+
+h1{
+  font-weight: bold;
+	text-align: center;
+  color:#483D8B;
+}
+a{
+	color: #fff;
+}
+span{
+	color: 	#fff;
+}
+
+textarea{
+  width: 93%;
+  height: 200px;
+  margin-top: 20px;
+}
+p{
+  width: 100%;
+}
+/* ======= class navbar ==============*/
+.style-nav{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 62px;
+	background-color:#483D8B;
+
+}
+.style-nav ul{
+	font-size: 16px;
+	color:#fff;
+	float: right;
+	margin-right: 100px;
+	margin-top: 20px;
+	list-style-type: none;
+
+}
+.style-nav ul li{
+
+	float: left;
+	margin-right: 30px;
+}
+
+.style-nav ul li a:hover{
+	color: #ADFF2F;
+	text-decoration: none;
+}
+
+/*==== class cabeçalho header ====== */
+.style-center{
+	margin-top: 180px;
+}
+.style-btnVerde{
+	background-color:#483D8B;
+	width:200px;
+	height:60px;
+	border: 0px solid #eee;
+}
+
+.style-btn{
+background-color:#ADFF2F;
+margin-left:30px;
+}
+/*=========== Quem Somos====*/
+.container-quem-somos
+{
+
+  width:90%;
+  height: 500px;
+  margin-left: 5%;
+  display: flex;
+  padding: 1% 1% 1% 1%;
+}
+.container-texto
+{
+  background-color:#eee;
+  box-shadow: 2px -3px 2px rgb(230, 230, 230);
+  color: rgb(102, 102, 102);
+  width: 50%;
+  height: 470px;
+  margin-left: 1%;
+  padding: 3% 3% 3% 3%;
+  text-align:justify;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.p-quem-somos{
+  margin-top: 10%;
+}
+.h3-quem-somos{
+  text-align: center;
+}
+
+.img-quem-somos{
+  width: 100%;
+  margin-top: 40px;
+}
+
+/*=========== class baixa o app ====*/
+.stylesetion{
+  background-color: #F8F9F9;
+}
+
+/*======== class Contato ==========*/
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    color: rgb(102, 102, 102);
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #483D8B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #ddd;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+/*================= id ================*/
+#styleh1-ace{
+  color: #fff;
+}
+
+#baixe-app{
+  margin: auto;
+  margin-top:10%;
+
+}
+
+/*================= classes e id's footer ================*/
+
+#div-footer{
+  width: 49%;
+  float: left;
+}
+#img-footer{
+  width: 20%;
+  height: 20%;
+  margin-top: 5%;
+  margin-left: 10%;  
+}
+#p-footer{
+  color: white;
+  text-align: end;
+  margin-top: 50%;
+}
+.h3-footer{
+  color: white;
+  float: left;
+  margin-left: 18%;
+  margin-top: 5%;
+  font-size: 15px;
+}
+.h-footer{
+  color: white;
+  float: left;
+  margin-left: 38%;
+  margin-top: 4%;
+  font-size: 15px;
+  display: block;
+}
+.logos{
+  width: 10%;
+  height: 10%;
+  float: inherit;
+}
+.logo-div{
+  float: right;
+}

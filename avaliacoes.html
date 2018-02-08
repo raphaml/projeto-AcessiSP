@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AcessiSP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/avaliacoes.css" />
+</head>
+<body ng-app="projeto" ng-controller="avaliacoesController">
+
+
+    <div class="containe-resul"ng-repeat="avaliacao in avaliacoes">
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2017/07/14/09/39/city-2503261_960_720.jpg"
+                class="imgs" ng-click="mostrar(avaliacao)" ng-hide="avaliacao.status">
+            </div>
+
+            <div class="container-rodape">
+                <h3>{{avaliacao.local}}</h3>
+                <p>{{avaliacao.endereco}}</p>
+            </div>
+
+            <div class="avalicao" ng-show="avaliacao.status">
+                    <p class="style_p">O quanto acessível é este lugar para você?</p>
+                    <p class="style_p2">
+                        {{avaliacao.pergunta1}}
+                        <p class="style_p3">Sendo 0 ruim, entre 1 e 5 medio, entre 6 e 9 bom, e 10 Otimo</p>    
+                    </p>
+            </div>
+
+            <div class="avalicao" ng-show="avaliacao.status">
+                    <p class="style_p">Tem vaga para cadeirante e/ou manobrista?</p>
+                    <p class="style_p2">
+                        {{avaliacao.pergunta2}}
+                        <p class="style_p3">Sendo 0 ruim, entre 1 e 5 medio, entre 6 e 9 bom, e 10 Otimo</p>    
+                    </p>
+            </div>
+
+            <div class="avalicao" ng-show="avaliacao.status">
+                    <p class="style_p">A entrada é boa para pessoas com dificuldade de locomoção?</p>
+                    <p class="style_p2">
+                        {{avaliacao.pergunta3}}
+                        <p class="style_p3">Sendo 0 ruim, entre 1 e 5 medio, entre 6 e 9 bom, e 10 Otimo</p>
+                    </p>
+            </div>
+
+            <div class="avalicao" ng-show="avaliacao.status">
+                    <p class="style_p">Tem banheiro com acessibilidade?</p>
+                    <p class="style_p2">
+                        {{avaliacao.pergunta4}}
+                        <p class="style_p3">Sendo 0 ruim, entre 1 e 5 medio, entre 6 e 9 bom, e 10 Otimo</p>
+                    </p>
+            </div>  
+
+            <div class="avalicao" ng-show="avaliacao.status">
+                    <p class="style_p">Dentro do estabelicento, existem rampas ? elevadores ou algo que ajude na acessibilidade</p>
+                    <p class="style_p2">
+                        {{avaliacao.pergunta5}}
+                        <p class="style_p3">Sendo 0 ruim, entre 1 e 5 medio, entre 6 e 9 bom, e 10 Otimo</p>
+                    </p>
+            </div>
+            <button class="style-btnrosa type"="button" ng-show="avaliacao.status">Voltar</button>  
+    </div>        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="js/controller.js"></script>
+
+</body>
+</html>

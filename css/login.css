@@ -1,0 +1,58 @@
+/* tags nativas do html */
+input[type=submit] {
+    background-color: #35ce00;
+    color: white;
+    font-weight: bolder;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-left: 37%;
+
+}
+input[type=submit]:hover {
+    background-color: rgb(127, 184, 132);
+}
+/* id's */
+#input1{
+    margin-top: 2%;
+}
+#div-logo{
+    text-align: center;
+}
+#logo{
+    width: 20%;
+    height: 20%;
+}
+
+/* classes */
+.style-input{
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.style-header{
+    background-image: url(../img/acessi.png);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------------------------------------------------------------------- */
+.container-texto
+{
+  background-color:#454d9a7a;
+  color: rgb(102, 102, 102); 
+  width:25%;
+  margin: auto;
+  padding: 3% 3% 3% 3%;
+  text-align:justify;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-top: 10%;
+}

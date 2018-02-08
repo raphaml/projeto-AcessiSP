@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AcessiSP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css">
+</head>
+<body ng-app="projeto", ng-controller="loginController" class="style-header">
+
+        <div class="container-texto">
+            <div id="div-logo">
+                <a href="index.html">
+                <img id="logo"src="img/logo-site.png">
+                </a>
+            </div>    
+            <input id="input1" class="style-input" type="text" ng-model="login" placeholder="Login">
+
+            <input id="input2" class="style-input" type="password" ng-model="senha" placeholder="Senha">       
+
+            <input type="submit" value="Entrar" ng-click="entrar(login, senha)">
+
+        </div>  
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script src="js/controller.js"></script>
+</body>
+</html>
+
